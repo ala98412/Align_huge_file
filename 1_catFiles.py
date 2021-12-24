@@ -24,7 +24,7 @@ def readFasta(path):
     print(f"[*]", end = "\r", flush = True)
     seqnames.append(seqname)
     seqs.append(seq)
-
+    print()
     return seqnames, seqs
 def writeNewFasta(path, seqnames, seqs):
     with open(path, 'w') as FILE:
